@@ -7,7 +7,7 @@ RUN if [ -f /etc/nginx/nginx.conf ]; then rm /etc/nginx/nginx.conf; fi
 # Add a new Nginx configuration file
 COPY nginx.conf /etc/nginx/
 
-COPY index.html /usr/share/nginx/html/
+#COPY index.html /usr/share/nginx/html/
 
 # Expose ports
 EXPOSE 80

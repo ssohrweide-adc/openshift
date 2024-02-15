@@ -17,6 +17,6 @@ CMD ["nginx", "-g", "daemon off;"]
 
 
 #RUN apt-get update && apt-get install -y curl
-#RUN curl -L https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux.tar.gz | tar zx && \
-#    mv oc /usr/local/bin/ && \
-#    rm -f openshift-client-linux.tar.gz
+RUN curl -L https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux.tar.gz | tar zx && \
+    mv oc /usr/local/bin/ && \
+    rm -f openshift-client-linux.tar.gz
